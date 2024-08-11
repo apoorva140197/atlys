@@ -59,8 +59,9 @@ const SignupModal = ({ setScreen }) => {
               <div></div>
             </div>
             <input
-            onChange={(e)=>{handleUsernameChange(e)}}
+            onChange={(e)=>{handleEmailChange(e)}}
               type="email"
+              value={email}
               className="bg-zinc-950 border-white p-3 rounded-md w-full text-gray-300"
               placeholder="Enter your email"
             />
@@ -71,8 +72,9 @@ const SignupModal = ({ setScreen }) => {
               <div></div>
             </div>
             <input
-            onChange={(e)=>{handleEmailChange(e)}}
+            onChange={(e)=>{handleUsernameChange(e)}}
               type="text"
+              value={username}
               className="bg-zinc-950 border-white p-3 rounded-md w-full text-gray-300"
               placeholder="Choose a preferred username"
             />
@@ -86,6 +88,7 @@ const SignupModal = ({ setScreen }) => {
               <input
               onChange={(e)=>{handlePasswordChange(e)}}
                 type="password"
+                value={password}
                 className="bg-zinc-950 border-white p-3 rounded-md w-full text-gray-300"
                 placeholder="Choose a strong password"
               />
