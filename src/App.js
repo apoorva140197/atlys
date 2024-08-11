@@ -1,4 +1,3 @@
-import logo from './logo.svg';
 import './App.css';
 import LoginModal from './components/LoginModal.js';
 import Posts from './components/Posts.js';
