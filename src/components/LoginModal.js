@@ -41,6 +41,7 @@ const LoginModal = ({ setScreen, screen }) => {
             <input
               type="text"
               onChange={(e)=>{handleEmailChange(e)}}
+              value={email}
               placeholder="Enter your email or username"
               className="w-full px-3 py-2 mt-2 bg-zinc-950 rounded-md text-gray-300 focus:outline-none focus:ring-2 focus:ring-indigo-600"
             />
@@ -48,18 +49,16 @@ const LoginModal = ({ setScreen, screen }) => {
           <div>
             <div className="flex items-center justify-between">
               <label className="text-gray-400">Password</label>
-              <div className="text-sm">
-                <a
-                  href="#"
-                  className="text-white hover:text-indigo-500"
-                >
+              <div className="text-sm text-white hover:text-indigo-500">
+            
                   Forgot password?
-                </a>
+                
               </div>
             </div>
             <div className="mt-2">
               <input
                 onChange={(e)=>{handlePasswordChange(e)}}
+                value={password}
                 type="password"
                 placeholder="Enter your password"
                 className="w-full px-3 py-2 mt-2 bg-zinc-950 rounded-md text-gray-300 focus:outline-none focus:ring-2 focus:ring-indigo-600"
